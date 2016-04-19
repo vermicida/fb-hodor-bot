@@ -1,0 +1,27 @@
+
+application: fb-hodor-bot
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+env_variables:
+
+  FB_MESSENGER_API_URL: "https://graph.facebook.com/v2.6/me/messages"
+  FB_MESSENGER_VERIFY_TOKEN: "set-your-own"
+  FB_MESSENGER_APP_ID: "set-your-own"
+  FB_MESSENGER_APP_PRIVACY_POLICY_URL: "set-your-own"
+  FB_PAGE_ACCESS_TOKEN: "set-your-own"
+
+handlers:
+
+- url: /webhook
+  script: app.app
+
+- url: /
+  script: app.app
+
+libraries:
+
+- name: ssl
+  version: latest

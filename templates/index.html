@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Diego Herrera">
+    <meta name="keywords" content="bot, bots, facebook, fb, messenger, hodor">
+    <meta name="description" content="A really simple bot for Facebook Messenger. Try to speak to Hodor, he might has something important to tell you.">
+    <title>Hodor Bot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <style>
+        .container { text-align: center; }
+        .header { padding-top: 80px; padding-bottom: 40px; }
+        .footer { padding-top: 66px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="row">
+            <div class="twelve columns">
+                <header class="header">
+                    <h1>Hodor Bot</h1>
+                    <p>A really simple bot for Facebook Messenger.</p>
+                </header>
+            </div>
+        </div>
+        <!-- Facebook Messenger link -->
+        <div class="row">
+            <div class="twelve columns">
+                <a class="button button-primary" href="https://m.me/{{ fb_messenger_app_id }}" target="_blank">Talk to Hodor</a>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="row">
+            <div class="twelve columns">
+                <footer class="footer">
+                    <small>vermicida | 2016 | <a href="{{ fb_messenger_app_privacy_policy_url }}" target="_blank">Privacy Policy</a></small>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
