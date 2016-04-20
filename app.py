@@ -51,7 +51,7 @@ def webhook():
         # Try to verify the bot with the given info.
         response = bot.verify_bot(challenge, verify_token)
 
-    # In the request method is POST.
+    # If the request method is POST.
     else:
 
         from core.hodor import HodorQuote
